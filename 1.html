@@ -6,10 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
+    @font-face {
+      font-family: 'iconfont';  /* project id 1245165 */
+      src: url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.eot');
+      src: url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.eot?#iefix') format('embedded-opentype'),
+      url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.woff2') format('woff2'),
+      url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.woff') format('woff'),
+      url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.ttf') format('truetype'),
+      url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.svg#iconfont') format('svg');
+    }
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    /*通用*/
+    .clearfloat::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .left-float {
+      float: left;
     }
 
     header {
@@ -26,27 +45,29 @@
       text-decoration: none;
       color: rgb(254, 209, 54);
     }
-    /*通用*/
-    .clearfloat::after {
-      content: "";
-      display: block;
-      clear: both;
-    }
 
     .logo {
       float: left;
-      display: inline-block;
+      display: block;
+      margin-top: 30px;
+      margin-left: 10px;
       font: 40px/1.4em Arial;
     }
 
     ul>li {
       float:right;
-      display: inline-block;
-      padding: 10px;
+      display: block;
+      margin-top: 30px;
+      padding: 10px 30px;
+      font-family: 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
     }
 
     ul>li a {
       color: rgb(255, 255, 255);
+      font-size: 20px;
+    }
+    ul>li a:hover {
+      color: rgb(254, 209, 54);
     }
 
     .poster {
@@ -60,11 +81,15 @@
     }
 
     h1 {
+      margin-bottom: 20px;
       font-size: 60px;
+      font-family: Verdana;
     }
 
     .poster p {
+      margin-bottom: 20px;
       font-size: 80px;
+      font-family: Verdana;
     }
 
     button {
@@ -88,28 +113,59 @@
       color: rgb(255, 255, 255);
       font-size: 16px;
     }
+
+    #one {
+      font-family: 'iconfont';
+      font-size: 100px;
+      color: rgb(254,209,54);
+    }
   </style>
 </head>
 <body>
   <header>
+    <!--logo-->
     <p class="logo clearfloat"><a href="#">Avengers</a></p>
-
+    <!--导航栏-->
     <ul class="clearfloat">
-      <li><a href="#">Film review（影评）</a></li>
-      <li><a href="#">director（导演）</a></li>
-      <li><a href="#">timeline（时间线）</a></li>
-      <li><a href="#">actor（演员）</a></li>
-      <li><a href="#">Characteristics（特点）</a></li>
+      <li><a href="#">你的评论</a></li>
+      <li><a href="#">导演</a></li>
+      <li><a href="#">时间线</a></li>
+      <li><a href="#">演员</a></li>
+      <li><a href="#">历程</a></li>
     </ul>
-
+    <!--位于中间的标语“欢迎！”-->
     <div class="poster">
-      <h1>welcome</h1>
-      <p>IT'S NICE TO MEET YOU</p>
+      <h1>Welcome To The Endgame!</h1>
+      <p>Whatever it takes！</p>
     </div>
-
+    <!--按钮-->
     <button>
       <a href="#">TELL ME MORE</a>
     </button>
   </header>
+
+  <main>
+    <!--开头标题-->
+    <div>
+      <h2>值得纪念</h2>
+      <p>...........</p>
+    </div>
+    <!--三个方面-->
+      <div class="left-float">
+        <p id="one">&#xe803;</p>
+        <h4>拍摄过程</h4>
+        <p>2018年1月，该片的主要拍摄工作已经结束。9月初，《复仇者联盟4：终局之战》剧组齐聚亚特兰大片场，克里斯·埃文斯、斯嘉丽·约翰逊、保罗·路德、杰瑞米·雷纳与马克·鲁法洛等回归影片的补拍工作。10月13日，为期一个多月的《复仇者联盟4：终局之战》补拍工作正式完成。</p>
+      </div>
+      <div>
+          <p id="one">&#xe604;</p>
+          <h4>世界纪录</h4>
+          <p>《复仇者联盟4：终局之战》以12.09亿美元票房的成绩打破“首映周末全球票房最高电影”吉尼斯世界纪录称号，打破纪录的时间为2019年4月28日。同时也达成另一项吉尼斯世界纪录：全球票房最快达到10亿的电影，仅仅用了5天时间。</p>
+      </div>
+      <div>
+          <p id="one">&#xe652;</p>
+          <h4>影片评价</h4>
+          <p>整部影片中，好几场大戏的信息量十足且节奏非常快，无论是声势浩大的动作场面、令人眼花缭乱的特效场景，还是极为紧凑的剧情发展，都不断刺激着观众的心脏，全程信息轰炸，十足高能。导演罗素兄弟还是把重心放在了文戏方面，做到了深情地，甚至是悲壮地跟观众道一声再见。例如，“钢铁侠”与女儿以及“小辣椒”的相处，就展现了超级英雄感性、人性化的一面。</p>
+      </div>
+  </main>
 </body>
 </html>
