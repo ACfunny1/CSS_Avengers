@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: relative;
+      height: 800px;
+      background-image: url('background.jpg');
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(254, 209, 54);
+    }
+    /*通用*/
+    .clearfloat::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .logo {
+      float: left;
+      display: inline-block;
+      font: 40px/1.4em Arial;
+    }
+
+    ul>li {
+      float:right;
+      display: inline-block;
+      padding: 10px;
+    }
+
+    ul>li a {
+      color: rgb(255, 255, 255);
+    }
+
+    .poster {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 1;
+      text-align: center;
+      color: rgb(255, 255, 255);
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    .poster p {
+      font-size: 80px;
+    }
+
+    button {
+      position: absolute;
+      top: 68%;
+      left: 50%;
+      margin-left: -100px;
+      z-index: 1;
+      width: 200px;
+      height: 60px;
+      background-color: rgb(254, 209, 54);
+      border: 1px solid rgb(254, 209, 54);
+      border-radius: 3px;
+    }
+
+    button a {
+      display: table-cell;
+      width: 200px;
+      height: 60px;
+      vertical-align: middle;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="logo clearfloat"><a href="#">Avengers</a></p>
+
+    <ul class="clearfloat">
+      <li><a href="#">Film review（影评）</a></li>
+      <li><a href="#">director（导演）</a></li>
+      <li><a href="#">timeline（时间线）</a></li>
+      <li><a href="#">actor（演员）</a></li>
+      <li><a href="#">Characteristics（特点）</a></li>
+    </ul>
+
+    <div class="poster">
+      <h1>welcome</h1>
+      <p>IT'S NICE TO MEET YOU</p>
+    </div>
+
+    <button>
+      <a href="#">TELL ME MORE</a>
+    </button>
+  </header>
+</body>
+</html>
