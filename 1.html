@@ -21,15 +21,27 @@
       padding: 0;
     }
 
-    /*通用*/
+    /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓通用*/
     .clearfloat::after {
       content: "";
       display: block;
       clear: both;
     }
-    .left-float {
+
+    .float_left {
       float: left;
+      display: block;
     }
+
+    .font_family {
+      font-family: Arial 'Verdana';
+    }
+
+    .text_indent {
+      text-indent: 2em;
+    }
+    /*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑通用*/
+
 
     header {
       position: relative;
@@ -59,7 +71,6 @@
       display: block;
       margin-top: 30px;
       padding: 10px 30px;
-      font-family: 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
     }
 
     ul>li a {
@@ -83,13 +94,11 @@
     h1 {
       margin-bottom: 20px;
       font-size: 60px;
-      font-family: Verdana;
     }
 
     .poster p {
       margin-bottom: 20px;
       font-size: 80px;
-      font-family: Verdana;
     }
 
     button {
@@ -113,30 +122,105 @@
       color: rgb(255, 255, 255);
       font-size: 16px;
     }
-
-    #one {
+    /*第二部分开始*/
+    .iconfont_style {
+      text-align: center;
+      margin-bottom: 10px;
       font-family: 'iconfont';
       font-size: 100px;
       color: rgb(254,209,54);
     }
+
+    main {
+      position: relative;
+      height: 1000px;
+    }
+    .main_three {
+      width: calc(33.333333%);
+      margin-top: 300px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    main h3 {
+      text-align: center;
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .main_title {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 25px;
+      text-align: center;
+    }
+    /*第三部分开始*/
+    .actor {
+      position: relative;
+      height:1400px;
+      background-color: rgb(247, 247, 247);
+    }
+
+    .actor img {
+      width: 324px;
+      height: 477px;
+    }
+    .img_width {
+      width: 25%;
+    }
+    .actor_bg {
+      margin: 0 auto;
+      width: 324px;
+      height: 70px;
+      padding-top: 12px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .section_title {
+      position: relative;
+      top: 50px;
+      left: 800px;
+      margin-bottom: 120px;
+    }
+
+    .img_margin {
+      text-align: center;
+      margin-bottom:20px;
+    }
+
+    /*第四部分开始*/
+
+
+
   </style>
 </head>
+
+
+
+
+
+
+
+
+
 <body>
   <header>
     <!--logo-->
     <p class="logo clearfloat"><a href="#">Avengers</a></p>
     <!--导航栏-->
     <ul class="clearfloat">
-      <li><a href="#">你的评论</a></li>
-      <li><a href="#">导演</a></li>
-      <li><a href="#">时间线</a></li>
-      <li><a href="#">演员</a></li>
-      <li><a href="#">历程</a></li>
+      <li class="font_family"><a href="#">你的评论</a></li>
+      <li class="font_family"><a href="#">导演</a></li>
+      <li class="font_family"><a href="#">时间线</a></li>
+      <li class="font_family"><a href="#">演员</a></li>
+      <li class="font_family"><a href="#">历程</a></li>
     </ul>
     <!--位于中间的标语“欢迎！”-->
     <div class="poster">
-      <h1>Welcome To The Endgame!</h1>
-      <p>Whatever it takes！</p>
+      <h1 class="font_family">Welcome To The Endgame!</h1>
+      <p class="font_family">Whatever it takes！</p>
     </div>
     <!--按钮-->
     <button>
@@ -144,28 +228,106 @@
     </button>
   </header>
 
-  <main>
+  <main class="clearfloat">
     <!--开头标题-->
-    <div>
-      <h2>值得纪念</h2>
-      <p>...........</p>
+    <div class="main_title">
+      <h2>Memorable Moment</h2>
+      <p>Let us cheer！！</p>
     </div>
     <!--三个方面-->
-      <div class="left-float">
-        <p id="one">&#xe803;</p>
-        <h4>拍摄过程</h4>
-        <p>2018年1月，该片的主要拍摄工作已经结束。9月初，《复仇者联盟4：终局之战》剧组齐聚亚特兰大片场，克里斯·埃文斯、斯嘉丽·约翰逊、保罗·路德、杰瑞米·雷纳与马克·鲁法洛等回归影片的补拍工作。10月13日，为期一个多月的《复仇者联盟4：终局之战》补拍工作正式完成。</p>
+      <div class="main_three float_left">
+        <p class="iconfont_style">&#xe803;</p>
+        <h3 class="font_family">Shooting Process</h3>
+        <p class="text_indent">In January 2018, the film's main shooting work was over. In early September, the "Avengers 4: The Final Battle" crew gathered at the Atlanta studio, Chris Evans, Scarlett Johansson, Paul Luther, Jeremy Reiner and Mark Ruffalo. Return to the film's refill work. On October 13th, the retake of the "Avengers 4: The Final Battle" for more than a month was officially completed.</p>
       </div>
-      <div>
-          <p id="one">&#xe604;</p>
-          <h4>世界纪录</h4>
-          <p>《复仇者联盟4：终局之战》以12.09亿美元票房的成绩打破“首映周末全球票房最高电影”吉尼斯世界纪录称号，打破纪录的时间为2019年4月28日。同时也达成另一项吉尼斯世界纪录：全球票房最快达到10亿的电影，仅仅用了5天时间。</p>
+      <div class="main_three float_left">
+          <p class="iconfont_style">&#xe604;</p>
+          <h3 class="font_family">World Record</h3>
+          <p class="text_indent">The Avengers 4: The Final Battle broke the Guinness World Record for the premiere of the world's highest box office movie at the premiere of the weekend, with a box office of $1,209 million. The record was broken on April 28, 2019. At the same time, it also reached another Guinness World Record: the fastest box office in the world with a ballot of 1 billion, only took 5 days.</p>
       </div>
-      <div>
-          <p id="one">&#xe652;</p>
-          <h4>影片评价</h4>
-          <p>整部影片中，好几场大戏的信息量十足且节奏非常快，无论是声势浩大的动作场面、令人眼花缭乱的特效场景，还是极为紧凑的剧情发展，都不断刺激着观众的心脏，全程信息轰炸，十足高能。导演罗素兄弟还是把重心放在了文戏方面，做到了深情地，甚至是悲壮地跟观众道一声再见。例如，“钢铁侠”与女儿以及“小辣椒”的相处，就展现了超级英雄感性、人性化的一面。</p>
+      <div class="main_three float_left">
+          <p class="iconfont_style">&#xe652;</p>
+          <h3 class="font_family">Film Evaluation</h3>
+          <p class="text_indent">In the whole film, several big dramas have a lot of information and a very fast rhythm. Whether it is a huge action scene, a dazzling special effects scene, or an extremely compact plot development, it constantly stimulates the hearts of the audience and bombards the entire information. Full of high energy. The director Russell Brothers still focused on the literary drama, and made a goodbye to the audience with deep affection and even tragic. For example, the relationship between "Iron Man" and his daughter and "Little Pepper" shows the sensibility and humanity of the superhero.</p>
       </div>
   </main>
+
+  <section class="actor">
+    <!--演员表标题-->
+    <div class="section_title">
+      <h2>List of Actors</h2>
+      <p>Pay tribute to them</p>
+    </div>
+
+    <div class="clearfloat">
+      <div class="float_left img_width img_margin">
+        <div><img src='./actor/ironman.jpg' alt=""></div>
+        <div class="actor_bg">
+          <h3>Tony Stark</h3>
+          <p>Robert Downey Jr.</p>
+        </div>
+      </div>
+
+      <div class="float_left img_width img_margin">
+        <div><img src='./actor/Captain.jpg' alt=""></div>
+        <div class="actor_bg">
+          <h3>Steve Rogers</h3>
+          <p>Chris Evans</p>
+        </div>
+      </div>
+
+      <div class="float_left img_width img_margin">
+        <div><img src='./actor/thor.jpg' alt=""></div>
+        <div class="actor_bg">
+          <h3>Thor</h3>
+          <p>Chris Hemsworth</p>
+        </div>
+      </div>
+
+      <div class="float_left img_width img_margin">
+        <div><img src='./actor/hulk.jpg' alt=""></div>
+        <div class="actor_bg">
+          <h3>Bruce Banner</h3>
+          <p>Mark Ruffalo</p>
+        </div>
+      </div>
+
+      <div class="float_left img_width img_margin">
+        <div><img src='./actor/BlackWidow.jpg' alt=""></div>
+        <div class="actor_bg">
+          <h3>Natasha Romanoff</h3>
+          <p>Scarlett Johansson</p>
+        </div>
+      </div>
+
+      <div class="float_left img_width img_margin">
+        <div><img src='./actor/yingyan.jpg' alt=""></div>
+        <div class="actor_bg">
+          <h3>Clint Barton</h3>
+          <p>Jeremy Renner</p>
+        </div>
+      </div>
+
+      <div class="float_left img_width img_margin">
+        <div><img src='./actor/Carol.jpg' alt=""></div>
+        <div class="actor_bg">
+          <h3>Carol Danvers </h3>
+          <p>Brie Larson</p>
+        </div>
+      </div>
+
+      <div class="float_left img_width img_margin">
+        <div><img src='./actor/xiaolajiao.jpg' alt=""></div>
+        <div class="actor_bg">
+          <h3>Pepper Potts</h3>
+          <p>Gwyneth Paltrow</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+  </section>
 </body>
 </html>
