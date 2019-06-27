@@ -21,7 +21,11 @@
       padding: 0;
       max-width: 2000px;
     }
-
+    /*隐藏滚动条*/
+    body {
+      overflow-x:hidden;
+      overflow-y:auto;
+    }
 
     /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓通用*/
     .clearfloat::after {
@@ -126,6 +130,9 @@
       color: rgb(255, 255, 255);
       font-size: 16px;
     }
+    button a:hover {
+      color: rgb(0, 0, 0);
+    }
     /*第二部分开始*/
     .iconfont_style {
       text-align: center;
@@ -134,7 +141,6 @@
       font-size: 100px;
       color: rgb(254,209,54);
     }
-
     main {
       position: relative;
       height: 1000px;
@@ -145,6 +151,10 @@
       margin-top: 300px;
       padding-left: 35px;
       padding-right: 35px;
+    }
+    .main_three .p_fontfamily {
+      line-height: 1.5;
+      font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     main h3 {
@@ -158,8 +168,14 @@
       top: 20%;
       left: 50%;
       transform: translate(-50%,-50%);
-      font-size: 25px;
+      font-size: 30px;
       text-align: center;
+    }
+    .main_title h2 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .main_title p {
+      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     /*第三部分开始*/
     .actor {
@@ -167,6 +183,8 @@
       height:1400px;
       width: 100%;
       background-color: rgb(247, 247, 247);
+      background-image: url(./sky_2.jpg);
+      background-size: cover;
     }
 
     .actor img {
@@ -190,6 +208,14 @@
       left: 800px;
       margin-bottom: 120px;
     }
+    .section_title h2 {
+      font-size: 40px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .section_title p {
+      font-size: 20px;
+      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
 
     .img_margin {
       text-align: center;
@@ -204,12 +230,15 @@
     }
     .time_title h2 {
       font-size: 40px;
+      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-align: center;
       margin-top: 50px;
     }
     .time_title p {
       text-align: center;
       margin-bottom: 100px;
+      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 20px;
     }
     .time img {
       border: 10px solid rgb(247, 247, 247);
@@ -383,16 +412,36 @@
     }
 
     /*第七部分开始*/
+    footer {
+      background: rgb(247, 247, 247);
+      height: 100px;
+    }
     footer span,footer a {
       display: inline-block;
+    }
+    footer span {
+      margin-left: 50px;
     }
 
     footer span {
       margin-right: 500px;
     }
     .footer_iconfont {
+      display: inline-block;
+      margin-top: 20px;
       margin-left: 10px;
-      margin-right: 50px;
+      margin-right: 20px;
+    }
+    .footer_iconfont a {
+      color: rgb(0, 0, 0);
+    }
+    .footer_iconfont a:hover {
+      color: rgb(254,209,54);
+    }
+
+    .footer_pp {
+      margin-left: 300px;
+      margin-right: 180px;
     }
 
 
@@ -412,16 +461,16 @@
 
 
 <body>
-  <header>
+  <header><!--第一部分-->
     <!--logo-->
     <p class="logo clearfloat"><a href="#">Avengers</a></p>
     <!--导航栏-->
     <ul class="clearfloat">
-      <li class="font_family"><a href="#">你的评论</a></li>
-      <li class="font_family"><a href="#">导演</a></li>
-      <li class="font_family"><a href="#">时间线</a></li>
-      <li class="font_family"><a href="#">演员</a></li>
-      <li class="font_family"><a href="#">历程</a></li>
+      <li class="font_family"><a href="#sixth">你的评论</a></li>
+      <li class="font_family"><a href="#fifth">导演</a></li>
+      <li class="font_family"><a href="#fourth">时间线</a></li>
+      <li class="font_family"><a href="#third">演员</a></li>
+      <li class="font_family"><a href="#second">历程</a></li>
     </ul>
     <!--位于中间的标语“欢迎！”-->
     <div class="poster">
@@ -434,7 +483,7 @@
     </button>
   </header>
 
-  <main class="clearfloat">
+  <main class="clearfloat" id="second"><!--第二部分-->
     <!--开头标题-->
     <div class="main_title">
       <h2>Memorable Moment</h2>
@@ -444,21 +493,21 @@
       <div class="main_three float_left">
         <p class="iconfont_style">&#xe803;</p>
         <h3 class="font_family">Shooting Process</h3>
-        <p class="text_indent">In January 2018, the film's main shooting work was over. In early September, the "Avengers 4: The Final Battle" crew gathered at the Atlanta studio, Chris Evans, Scarlett Johansson, Paul Luther, Jeremy Reiner and Mark Ruffalo. Return to the film's refill work. On October 13th, the retake of the "Avengers 4: The Final Battle" for more than a month was officially completed.</p>
+        <p class="text_indent p_fontfamily">In January 2018, the film's main shooting work was over. In early September, the "Avengers 4: The Final Battle" crew gathered at the Atlanta studio, Chris Evans, Scarlett Johansson, Paul Luther, Jeremy Reiner and Mark Ruffalo. Return to the film's refill work. On October 13th, the retake of the "Avengers 4: The Final Battle" for more than a month was officially completed.</p>
       </div>
       <div class="main_three float_left">
           <p class="iconfont_style">&#xe604;</p>
           <h3 class="font_family">World Record</h3>
-          <p class="text_indent">The Avengers 4: The Final Battle broke the Guinness World Record for the premiere of the world's highest box office movie at the premiere of the weekend, with a box office of $1,209 million. The record was broken on April 28, 2019. At the same time, it also reached another Guinness World Record: the fastest box office in the world with a ballot of 1 billion, only took 5 days.</p>
+          <p class="text_indent p_fontfamily">The Avengers 4: The Final Battle broke the Guinness World Record for the premiere of the world's highest box office movie at the premiere of the weekend, with a box office of $1,209 million. The record was broken on April 28, 2019. At the same time, it also reached another Guinness World Record: the fastest box office in the world with a ballot of 1 billion, only took 5 days.</p>
       </div>
       <div class="main_three float_left">
           <p class="iconfont_style">&#xe652;</p>
           <h3 class="font_family">Film Evaluation</h3>
-          <p class="text_indent">In the whole film, several big dramas have a lot of information and a very fast rhythm. Whether it is a huge action scene, a dazzling special effects scene, or an extremely compact plot development, it constantly stimulates the hearts of the audience and bombards the entire information. Full of high energy. The director Russell Brothers still focused on the literary drama, and made a goodbye to the audience with deep affection and even tragic. For example, the relationship between "Iron Man" and his daughter and "Little Pepper" shows the sensibility and humanity of the superhero.</p>
+          <p class="text_indent p_fontfamily">In the whole film, several big dramas have a lot of information and a very fast rhythm. Whether it is a huge action scene, a dazzling special effects scene, or an extremely compact plot development, it constantly stimulates the hearts of the audience and bombards the entire information. Full of high energy. The director Russell Brothers still focused on the literary drama, and made a goodbye to the audience with deep affection and even tragic. For example, the relationship between "Iron Man" and his daughter and "Little Pepper" shows the sensibility and humanity of the superhero.</p>
       </div>
   </main>
 
-  <section class="actor">
+  <section class="actor" id="third"><!--第三部分-->
     <!--演员表标题-->
     <div class="section_title">
       <h2>List of Actors</h2>
@@ -532,32 +581,32 @@
     </div>
   </section>
 
-  <section class="time clearfloat">
+  <section class="time clearfloat" id="fourth"><!--第四部分-->
     <div class="time_title">
       <h2>Avengers Timeline</h2>
       <p>Introduction to the Avengers 1-3</p>
     </div>
 
     <div class="time_a1 clearfloat">
-      <img src="/time/A11.jpg" class="time_margin_b">
+      <img src="./time/A11.jpg" class="time_margin_b">
       <div>
-        <h3>复仇者1</h3>
+        <h3>Marvel's The Avengers</h3>
         <p>The film tells the SHIELD Commander Nick Fury in order to deal with the exiled Loki in "Raytheon", actively rushing to find the strongest, Iron Man, Captain America, Thor Thor, Hulk, Black Widow and Hawkeye Six superheroes gathered together to form the Avengers Alliance and work together to deal with the evil god Loki.</p>
       </div>
     </div>
 
     <div class="time_a2 clearfloat">
-        <img src="/time/A22.jpg" class="time_margin_b">
+        <img src="./time/A22.jpg" class="time_margin_b">
         <div>
-          <h3>复仇者2</h3>
+          <h3>Age of Ultron</h3>
           <p>When Iron Man tried to initiate a dormant peace-keeping plan, he planned to make a mistake. Therefore, when the earth is facing a critical moment of life and death, the superheroes will come forward and take up the responsibility of saving the world. They will stop the terrible artificial intelligence robot "Ao Chuang" to formulate a terrorist plan.</p>
         </div>
     </div>
 
       <div class="time_a3 clearfloat">
-        <img src="/time/A33.jpg" class="time_margin_t">
+        <img src="./time/A33.jpg" class="time_margin_t">
         <div>
-          <h3>复仇者3</h3>
+          <h3>Infinity War</h3>
           <p>The film is the third in the "Avengers" series, the 19th film of the Marvel movie universe, which is linked to the "Raytheon 3: The Twilight of the Gods" and the "Black Panther" story, telling the Avengers Alliance And their superhero allies sacrifice everything to stop the story of destroying half of the universe's life.</p>
         </div>
       </div>
@@ -565,19 +614,16 @@
       <div class="time_midborder"></div>
   </section>
 
-  <section class="director">
+  <section class="director" id="fifth"><!--第五部分-->
     <div class="clearfloat">
       <div class="director_stan float_left director_wh director_margin_t">
-        <img src="/director/Stan Lee.jpg" alt="">
-        <h3>Stan Lee</h3>
+        <img src="./director/Stan Lee.jpg" alt="">
+        <h3>Stan Lee(1992-2018)</h3>
         <p>Author</p>
-        <a href="" class="iconfont_direction">&#xe601</a>
-        <a href="" class="iconfont_direction">&#xe66b</a>
-        <a href="" class="iconfont_direction">&#xe6ee</a>
       </div>
 
     <div class="director_anthony float_left director_wh director_margin_t">
-      <img src="/director/Anthony Russo.jpg" alt="">
+      <img src="./director/Anthony Russo.jpg" alt="">
       <h3>Anthony Russo</h3>
       <p>director</p>
       <a href="" class="iconfont_direction">&#xe601</a>
@@ -586,7 +632,7 @@
     </div>
 
     <div class="directior_joe float_left director_wh director_margin_t">
-      <img src="/director/Joe Russo.jpg" alt="">
+      <img src="./director/Joe Russo.jpg" alt="">
       <h3>Joe Russo</h3>
       <p>director</p>
       <a href="" class="iconfont_direction">&#xe601</a>
@@ -601,7 +647,7 @@
   </div>
   </section>
 
-  <section class="comment">
+  <section class="comment" id="sixth"><!--第六部分-->
     <div class="comment_title">
       <h2>TELL ME</h2>
     </div>
@@ -615,12 +661,18 @@
       </form>
   </section>
 
-  <footer>
+  <footer><!--第七部分-->
     <span>Copyright © Your Website 2014</span>
-      <a href="" class="iconfont_direction" class="footer_iconfont">&#xe601</a>
-      <a href="" class="iconfont_direction" class="footer_iconfont">&#xe66b</a>
-      <a href="" class="iconfont_direction" class="footer_iconfont">&#xe6ee</a>
-      <a href="">Privacy Policy</a>
+      <div class="footer_iconfont">
+        <a href="" class="iconfont_direction" >&#xe601</a>
+      </div>
+      <div class="footer_iconfont">
+        <a href="" class="iconfont_direction">&#xe66b</a>
+      </div>
+      <div class="footer_iconfont">
+        <a href="" class="iconfont_direction">&#xe6ee</a>
+      </div>
+      <a href="" class="footer_pp">Privacy Policy</a>
       <a href="">Terms of Use</a>
   </footer>
 </body>
