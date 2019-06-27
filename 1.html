@@ -8,18 +8,20 @@
   <style>
     @font-face {
       font-family: 'iconfont';  /* project id 1245165 */
-      src: url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.eot');
-      src: url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.eot?#iefix') format('embedded-opentype'),
-      url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.woff2') format('woff2'),
-      url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.woff') format('woff'),
-      url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.ttf') format('truetype'),
-      url('https://at.alicdn.com/t/font_1245165_q1tegx066f9.svg#iconfont') format('svg');
+      src: url('https://at.alicdn.com/t/font_1245165_a0vfzi080q.eot');
+      src: url('https://at.alicdn.com/t/font_1245165_a0vfzi080q.eot?#iefix') format('embedded-opentype'),
+      url('https://at.alicdn.com/t/font_1245165_a0vfzi080q.woff2') format('woff2'),
+      url('https://at.alicdn.com/t/font_1245165_a0vfzi080q.woff') format('woff'),
+      url('https://at.alicdn.com/t/font_1245165_a0vfzi080q.ttf') format('truetype'),
+      url('https://at.alicdn.com/t/font_1245165_a0vfzi080q.svg#iconfont') format('svg');
     }
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      max-width: 2000px;
     }
+
 
     /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓通用*/
     .clearfloat::after {
@@ -46,7 +48,9 @@
     header {
       position: relative;
       height: 800px;
+      width: 100%;
       background-image: url('background.jpg');
+      background-size: cover;
     }
 
     ul {
@@ -134,6 +138,7 @@
     main {
       position: relative;
       height: 1000px;
+      width: 100%;
     }
     .main_three {
       width: calc(33.333333%);
@@ -160,6 +165,7 @@
     .actor {
       position: relative;
       height:1400px;
+      width: 100%;
       background-color: rgb(247, 247, 247);
     }
 
@@ -191,6 +197,206 @@
     }
 
     /*第四部分开始*/
+    .time {
+      position: relative;
+      height: 1400px;
+      width: 100%;
+    }
+    .time_title h2 {
+      font-size: 40px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .time_title p {
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .time img {
+      border: 10px solid rgb(247, 247, 247);
+      border-radius: 100%;
+      width: 200px;
+      height: 200px;
+    }
+
+    .time_midborder {
+      position: absolute;
+      top: 20%;
+      left: 55%;
+      height: 1000px;
+      border: 4px solid rgb(247, 247, 247);
+      z-index: -99;
+    }
+    .time_a1 img {
+      float: left;
+      margin-left: 50%;
+      z-index: 2;
+    }
+    .time_a1 div {
+      float: right;
+      margin-right: 55%;
+      position: relative;
+      top: -300px;
+      width: 500px;
+      text-align: right;
+    }
+
+    .time_a2 img {
+      float: left;
+      margin-left: 50%;
+      z-index: 2;
+    }
+    .time_a2 div {
+      float: right;
+      margin-right: 150px;
+      position: relative;
+      top: 20px;
+      width: 500px;
+      text-align: left;
+    }
+
+    .time_a3 img {
+      float: left;
+      margin-left: 50%;
+    }
+    .time_a3 div {
+      float: right;
+      margin-right: 55%;
+      position: relative;
+      top: -160px;
+      width: 500px;
+      text-align: right;
+    }
+
+    .time_margin_b {
+      margin-bottom: 140px;
+    }
+    .time_margin_t {
+      margin-top: 140px;
+    }
+
+    /*第五部分开始*/
+    .director {
+      position: relative;
+      top: 100px;
+      background-color: rgb(247, 247, 247);
+      height: 1000px;
+      width: 100%;
+    }
+
+    .director h2 {
+      font-size: 40px;
+    }
+
+    .director_title {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+    }
+
+    .director_wh {
+      text-align: center;
+      width: 600px;
+      height: 600px;
+    }
+    .director img{
+      width: 260px;
+      height: 260px;
+      border-radius: 100%;
+    }
+
+    .iconfont_direction {
+      font-size: 40px;
+      font-family: 'iconfont';
+    }
+
+    .director a {
+      margin: 10px;
+      color: rgb(0, 0, 0)
+    }
+    a:hover {
+      color:rgb(254,209,54)
+    }
+    .director_stan p,.director_anthony p,.directior_joe p {
+      margin-bottom: 20px;
+    }
+
+    .director_margin_t {
+      margin-top: 200px;
+    }
+
+    /*第六部分开始*/
+    .comment {
+      position: relative;
+      height: 800px;
+      background: url('sky.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    input {
+      display: block;
+      width: 500px;
+      height: 50px;
+      border-radius: 5px;
+    }
+
+    form {
+      position: absolute;
+      top: 50%;
+      left: 35%;
+      transform: translate(-50%,-50%);
+    }
+    textarea {
+      position: absolute;
+      top: 10%;
+      left: 120%;
+      width: 500px;
+      height: 220px;
+      border-radius: 5px;
+    }
+
+    input {
+      margin: 30px;
+    }
+
+    .comment_title {
+      position: relative;
+      top: 100px;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .comment_title h2 {
+      font-size: 40px;
+    }
+
+    .last_submit {
+      position: absolute;
+      top: 300px;
+      left: 450px;
+      width: 200px;
+      height: 60px;
+      vertical-align: middle;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      background-color: rgb(254,209,54);
+    }
+
+    /*第七部分开始*/
+    footer span,footer a {
+      display: inline-block;
+    }
+
+    footer span {
+      margin-right: 500px;
+    }
+    .footer_iconfont {
+      margin-left: 10px;
+      margin-right: 50px;
+    }
+
+
+
 
 
 
@@ -326,8 +532,96 @@
     </div>
   </section>
 
-  <section>
+  <section class="time clearfloat">
+    <div class="time_title">
+      <h2>Avengers Timeline</h2>
+      <p>Introduction to the Avengers 1-3</p>
+    </div>
 
+    <div class="time_a1 clearfloat">
+      <img src="/time/A11.jpg" class="time_margin_b">
+      <div>
+        <h3>复仇者1</h3>
+        <p>The film tells the SHIELD Commander Nick Fury in order to deal with the exiled Loki in "Raytheon", actively rushing to find the strongest, Iron Man, Captain America, Thor Thor, Hulk, Black Widow and Hawkeye Six superheroes gathered together to form the Avengers Alliance and work together to deal with the evil god Loki.</p>
+      </div>
+    </div>
+
+    <div class="time_a2 clearfloat">
+        <img src="/time/A22.jpg" class="time_margin_b">
+        <div>
+          <h3>复仇者2</h3>
+          <p>When Iron Man tried to initiate a dormant peace-keeping plan, he planned to make a mistake. Therefore, when the earth is facing a critical moment of life and death, the superheroes will come forward and take up the responsibility of saving the world. They will stop the terrible artificial intelligence robot "Ao Chuang" to formulate a terrorist plan.</p>
+        </div>
+    </div>
+
+      <div class="time_a3 clearfloat">
+        <img src="/time/A33.jpg" class="time_margin_t">
+        <div>
+          <h3>复仇者3</h3>
+          <p>The film is the third in the "Avengers" series, the 19th film of the Marvel movie universe, which is linked to the "Raytheon 3: The Twilight of the Gods" and the "Black Panther" story, telling the Avengers Alliance And their superhero allies sacrifice everything to stop the story of destroying half of the universe's life.</p>
+        </div>
+      </div>
+
+      <div class="time_midborder"></div>
   </section>
+
+  <section class="director">
+    <div class="clearfloat">
+      <div class="director_stan float_left director_wh director_margin_t">
+        <img src="/director/Stan Lee.jpg" alt="">
+        <h3>Stan Lee</h3>
+        <p>Author</p>
+        <a href="" class="iconfont_direction">&#xe601</a>
+        <a href="" class="iconfont_direction">&#xe66b</a>
+        <a href="" class="iconfont_direction">&#xe6ee</a>
+      </div>
+
+    <div class="director_anthony float_left director_wh director_margin_t">
+      <img src="/director/Anthony Russo.jpg" alt="">
+      <h3>Anthony Russo</h3>
+      <p>director</p>
+      <a href="" class="iconfont_direction">&#xe601</a>
+      <a href="" class="iconfont_direction">&#xe66b</a>
+      <a href="" class="iconfont_direction">&#xe6ee</a>
+    </div>
+
+    <div class="directior_joe float_left director_wh director_margin_t">
+      <img src="/director/Joe Russo.jpg" alt="">
+      <h3>Joe Russo</h3>
+      <p>director</p>
+      <a href="" class="iconfont_direction">&#xe601</a>
+      <a href="" class="iconfont_direction">&#xe66b</a>
+      <a href="" class="iconfont_direction">&#xe6ee</a>
+    </div>
+  </div>
+
+  <div class="director_title">
+    <h2>Direction</h2>
+    <p>Pay tribute to them</p>
+  </div>
+  </section>
+
+  <section class="comment">
+    <div class="comment_title">
+      <h2>TELL ME</h2>
+    </div>
+
+    <form action="">
+        <input type="text" placeholder="YOUR NAME*">
+        <input type="text" placeholder="YOUR EMAIL*">
+        <input type="text" placeholder="YOUR PHONE*">
+        <textarea name="pinlun" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+        <input type="submit" value="SUBMIT" class="last_submit">
+      </form>
+  </section>
+
+  <footer>
+    <span>Copyright © Your Website 2014</span>
+      <a href="" class="iconfont_direction" class="footer_iconfont">&#xe601</a>
+      <a href="" class="iconfont_direction" class="footer_iconfont">&#xe66b</a>
+      <a href="" class="iconfont_direction" class="footer_iconfont">&#xe6ee</a>
+      <a href="">Privacy Policy</a>
+      <a href="">Terms of Use</a>
+  </footer>
 </body>
 </html>
